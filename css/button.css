@@ -1,0 +1,76 @@
+.button {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.56;
+  color: var(--white);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  background-color: var(--green);
+  max-width: 306px;
+  width: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-accent {
+  border: 1px solid var(--button-accent);
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: var(--green-button);
+}
+
+.button-accent:hover,
+.button-accent:active,
+.button-accent:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+.button-bottom {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-bottom__icon {
+  fill: var(--green);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-bottom:hover .button-bottom__icon,
+.button-bottom:focus .button-bottom__icon,
+.button-bottom:active .button-bottom__icon {
+  fill: var(--white);
+}
+
+.button-bottom:hover,
+.button-bottom:focus,
+.button-bottom:active {
+  background-color: var(--green);
+}
+
+.button-bottom__link {
+  display: inherit;
+}
+
+.proposal__button {
+  margin-top: 39px;
+}
+
+.application__button {
+  max-width: 500px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}

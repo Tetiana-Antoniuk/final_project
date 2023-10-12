@@ -1,0 +1,12 @@
+.container-additional {
+  padding-right: 128px;
+  padding-left: 128px;
+}
+
+.container {
+  width: 1152px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 64px;
+  padding-left: 64px;
+}

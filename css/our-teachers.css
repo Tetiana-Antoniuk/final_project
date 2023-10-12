@@ -1,0 +1,41 @@
+.teachers {
+  padding: 150px 0;
+}
+
+.teachers__list {
+  display: flex;
+  gap: 32px;
+}
+
+.teachers__list-item {
+  width: calc((100% - 96px) / 4);
+}
+
+.teachers__list-item:hover img {
+  transform: scale(1.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.teachers__subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+
+.teachers__text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--subtitle);
+}
+
+.teacher__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}

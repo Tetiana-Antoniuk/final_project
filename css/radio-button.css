@@ -1,0 +1,55 @@
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
+  color: var(--form-text);
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: var(--white);
+}
+
+[type="radio"]:checked + label:before {
+  border: 2px solid var(--green);
+}
+
+[type="radio"]:not(:checked) + label:before {
+  border: 2px solid var(--radio-button);
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--green);
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  border-radius: 100%;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+}

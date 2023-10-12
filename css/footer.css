@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--black);
+}
+
+.footer__wrapper {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.37;
+  margin-bottom: 32px;
+  display: inline-block;
+}
+
+.footer__logo-accent {
+  color: var(--green);
+}
+
+.footer__contacts-text {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  color: var(--footer-link);
+  margin-bottom: 4px;
+}
+
+.footer__contacts-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  color: var(--white);
+  margin-bottom: 16px;
+  display: inline-block;
+  font-style: normal;
+}
+.footer__menu-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  color: var(--white);
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__menu-link:hover,
+.footer__menu-link:focus,
+.footer__menu-link:active {
+  color: var(--green);
+}
+
+.footer-networks__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--footer-networks-border);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-networks__link {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-networks__icon {
+  fill: var(--footer-networks);
+  width: 100%;
+  height: 100%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-networks__menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-networks__item:hover,
+.footer-networks__item:focus,
+.footer-networks__item:active {
+  border: 1px solid var(--networks-active);
+}
+
+.footer-networks__item:hover .footer-networks__icon,
+.footer-networks__item:focus .footer-networks__icon,
+.footer-networks__item:active .footer-networks__icon {
+  fill: var(--green);
+}
+
+.footer__stroke {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0;
+  border-top: 1px solid var(--footer-networks-border);
+}
+
+.footer__rights {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  color: var(--footer-link);
+}
+
+.footer__privacy-policy {
+  display: flex;
+  gap: 18px;
+}
+
+.footer__privacy-text {
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  color: var(--footer-link);
+}
