@@ -1,3 +1,5 @@
+/* mobile */
+
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
@@ -7,12 +9,11 @@
 [type="radio"]:not(:checked) + label {
   position: relative;
   padding-left: 24px;
-  margin-right: 16px;
   cursor: pointer;
   display: inline-block;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: -0.36px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.28px;
   color: var(--form-text);
 }
 
@@ -52,4 +53,14 @@
 }
 [type="radio"]:checked + label:after {
   opacity: 1;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
+  }
 }

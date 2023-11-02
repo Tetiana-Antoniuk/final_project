@@ -1,19 +1,19 @@
+/* mobile */
 .our-lessons {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .our-lessons__offers {
   display: flex;
-  flex-direction: row;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .our-lessons__item {
-padding: 32px;
-border-radius: 30px;
-border: 1px solid var(--green);
-flex-basis: calc((100% - 64px) / 3);
-width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid var(--green);
+  width: 100%;
 }
 
 .accent {
@@ -21,32 +21,75 @@ width: 100%;
 }
 
 .our-lessons__version {
-font-size: 20px;
-font-weight: 700;
-line-height: 1.2; 
-letter-spacing: -0.4px;
-text-align: center;
-margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
-.our-lessons__price{
-font-size: 32px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: -0.64px;
-text-align: center;
-margin-bottom: 16px;
+.our-lessons__price {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.64px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .our-lessons__text {
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-color: var(--subtitle);
-margin-bottom: 32px;
-text-align: center;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--subtitle);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .text-accent {
   color: var(--text-accent);
+}
+
+.our-lessons__button {
+  margin: 0 auto;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .our-lessons {
+    margin-bottom: 100px;
+  }
+
+  .our-lessons__offers {
+    gap: 32px;
+  }
+
+  .our-lessons__item {
+    border-radius: 30px;
+    width: 336px;
+  }
+  .our-lessons__price {
+    line-height: 1.38;
+    margin-bottom: 32px;
+  }
+  .our-lessons__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  .our-lessons {
+    margin-bottom: 150px;
+  }
+  .our-lessons__item {
+    flex-basis: calc((100% - 64px) / 3);
+    width: 100%;
+  }
+
+  .our-lessons__price {
+    line-height: 1.38;
+  }
 }

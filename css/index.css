@@ -13,6 +13,7 @@
 @import "./button.css";
 @import "./radio-button.css";
 @import "./modal.css";
+@import "./swiper.css";
 
 :root {
   --black: #121417;

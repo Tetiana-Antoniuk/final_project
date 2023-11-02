@@ -1,44 +1,22 @@
-.application__wrapper {
-  display: flex;
-  gap: 32px;
+/* mobile */
+
+.application {
+  margin-bottom: 80px;
 }
 
 .application__left {
-  background-color: var(--green);
-  width: 492px;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.application__text-wxrapper {
-  padding: 20px 20px 40px;
-  text-align: center;
-}
-
-.application__subtitle {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.8px;
-  color: var(--white);
-  margin-bottom: 8px;
-}
-
-.application__text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--text-accent);
+  display: none;
 }
 
 .application__form {
-  width: 500px;
+  width: 100%;
 }
 
 .application__input {
   width: 100%;
   padding: 16px 18px;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.29;
   color: var(--form-text);
   border-radius: 12px;
   border: 1px solid var(--form-border);
@@ -57,14 +35,14 @@
 
 .application__textarea {
   width: 100%;
-  padding: 16px 0 64px 18px;
-  font-size: 16px;
-  line-height: 1.5;
+  padding: 16px 0 60px 18px;
+  font-size: 14px;
+  line-height: 1.29;
   color: var(--form-text);
   border-radius: 12px;
   border: 1px solid var(--form-border);
   font-family: inherit;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .application__textarea:focus {
@@ -78,22 +56,119 @@
   font-family: inherit;
 }
 
+.application__radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .application__radio-subtitle {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.4px;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
   color: var(--form-text);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .application__policy {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.33;
   color: var(--subtitle);
+  text-align: justify;
 }
 
 .application__policy-link {
   text-decoration: underline;
   color: var(--subtitle);
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .application {
+    margin-bottom: 100px;
+  }
+
+  .application__right {
+    padding: 0 100px;
+  }
+
+  .application__radio-wrapper {
+    flex-direction: row;
+  }
+
+  .application__radio-wrapper {
+    gap: 16px;
+  }
+  .application__input {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application__textarea {
+    padding: 16px 0 64px 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  .application__radio-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin-bottom: 16px;
+  }
+
+  .application__policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  .application {
+    margin-bottom: 150px;
+  }
+
+  .application__wrapper {
+    display: flex;
+    gap: 32px;
+  }
+
+  .application__right {
+    padding: 0;
+  }
+
+  .application__left {
+    display: block;
+    background-color: var(--green);
+    width: 492px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .application__text-wxrapper {
+    padding: 20px 20px 40px;
+    text-align: center;
+  }
+
+  .application__subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .application__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-accent);
+  }
+
+  .application__form {
+    width: 500px;
+  }
 }

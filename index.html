@@ -10,13 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
 
     <title>englishexcellence.</title>
   </head>
   <body>
     <header>
-      <div class="container container-additional">
+      <div class="container">
         <div class="header">
           <a class="header-logo" href="./index.html">
             english<span class="header-logo__accent">excellence</span>.
@@ -71,28 +75,40 @@
               ></li>
             </ul>
           </div>
+          <button
+            class="header-mobile__button-open js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header-mobile__button-open_icon" width="32" height="32">
+              <use href="./images/svg-sprite.svg#icon-nav-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="container hero">
-        <h1 class="hero-title"
-          >Discover the joy of learning
-          <span class="title-accent">English</span> with us!</h1
-        >
-        <a class="button" href="#application">Leave an application</a>
-        <div class="button-bottom">
-          <a class="button-bottom__link" href="#footer">
-            <svg class="button-bottom__icon" width="24" height="24">
-              <use href="./images/svg-sprite.svg#icon-fi-small-left"></use>
-            </svg>
-          </a>
+      <section class="container-additional">
+        <div class="hero">
+          <h1 class="hero-title"
+            >Discover the joy of learning
+            <span class="title-accent">English</span> with us!</h1
+          >
+          <a class="button" href="#application">Leave an application</a>
+          <div class="button-bottom">
+            <a class="button-bottom__link" href="#footer">
+              <svg class="button-bottom__icon" width="24" height="24">
+                <use href="./images/svg-sprite.svg#icon-fi-small-left"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
       <section id="about-us" class="about-us">
-        <div class="container container-additional">
+        <div class="container">
           <h2 class="title">About <span class="title-underline">Us</span></h2>
           <p class="subtitle"
             >We are dedicated to providing engaging and effective English
@@ -131,7 +147,7 @@
       </section>
 
       <section id="our-lessons" class="our-lessons">
-        <div class="container container-additional">
+        <div class="container">
           <h2 class="title"
             >Our <span class="title-underline">lessons</span></h2
           >
@@ -149,7 +165,7 @@
                 collaborative language exercises and group activities, boosting
                 their conversational skills and confidence in using English.</p
               >
-              <a class="button" href="#application">Leave an application</a></li
+              <a class="button our-lessons__button" href="#application">Leave an application</a></li
             >
             <li class="our-lessons__item accent">
               <p class="our-lessons__version title-color">Standard</p>
@@ -160,7 +176,7 @@
                 listening, and speaking. It is a set of basic knowledge and
                 skills.</p
               >
-              <a class="button button-accent" href="#application"
+              <a class="button button-accent our-lessons__button" href="#application"
                 >Leave an application</a
               ></li
             >
@@ -172,62 +188,64 @@
                 instruction that focuses on a learner's specific language goals
                 and challenges, offering personal feedback.</p
               >
-              <a class="button" href="#application">Leave an application</a></li
+              <a class="button our-lessons__button" href="#application">Leave an application</a></li
             >
           </ul>
         </div>
       </section>
 
-      <section class="container proposal">
-        <h2 class="proposal__title"
-          >Master the <span class="title-accent">Language</span> with Our
-          English Package!</h2
-        >
-        <div class="proposal__main-block">
-          <div class="proposal__block_one">
-            <div class="proposal__wrapper">
-              <h3 class="proposal__subtitle">Power of English</h3>
-              <ul class="proposal__advantages">
-                <li class="proposal__item">
-                  <p class="proposal__text"
-                    >Dive into captivating lessons designed to stimulate your
-                    curiosity.</p
-                  >
-                </li>
-                <li class="proposal__item">
-                  <p class="proposal__text"
-                    >Learn in a nurturing setting where every student's progress
-                    <br />
-                    matters.</p
-                  >
-                </li>
-                <li class="proposal__item">
-                  <p class="proposal__text"
-                    >Experience the satisfaction of real progress as your
-                    language <br />
-                    skills and confidence grow with every session.</p
-                  >
-                </li>
-              </ul>
-              <a class="button proposal__button" href="#application"
-                >Leave an application</a
-              >
+      <section class="container-additional">
+        <div class="proposal">
+          <h2 class="proposal__title"
+            >Master the <span class="title-accent">Language</span> with Our
+            English Package!</h2
+          >
+          <div class="proposal__main-block">
+            <div class="proposal__block_one">
+              <div class="proposal__wrapper">
+                <h3 class="proposal__subtitle">Power of English</h3>
+                <ul class="proposal__advantages">
+                  <li class="proposal__item">
+                    <div class="proposal__item-wrapper">
+                      <p class="proposal__text"
+                        >Dive into captivating lessons designed to stimulate
+                        your curiosity.</p
+                      >
+                  </li>
+                  <li class="proposal__item">
+                      <p class="proposal__text"
+                        >Learn in a nurturing setting where every student's
+                        progress matters.</p
+                      >
+                  </li>
+                  <li class="proposal__item">
+                      <p class="proposal__text"
+                        >Experience the satisfaction of real progress as your
+                        language skills and confidence grow with every
+                        session.</p
+                      >
+                  </li>
+                </ul>
+                <a class="button proposal__button" href="#application"
+                  >Leave an application</a
+                >
+              </div>
+              <div class="proposal__image">
+                <img
+                  src="./images/lessons/books.png"
+                  alt="books"
+                  width="214"
+                  height="263"
+                />
+              </div>
             </div>
-            <div class="proposal__image">
-              <img
-                src="./images/lessons/books.png"
-                alt="books"
-                width="214"
-                height="263"
-              />
-            </div>
+            <div class="proposal__block_two"></div>
+            <div class="proposal__block_three"></div>
           </div>
-          <div class="proposal__block_two"></div>
-          <div class="proposal__block_three"></div>
         </div>
       </section>
 
-      <section id="teachers" class="container container-additional teachers">
+      <section id="teachers" class="container teachers">
         <h2 class="title"
           >Meet our <span class="title-underline">teachers</span></h2
         >
@@ -303,10 +321,7 @@
         </ul>
       </section>
 
-      <section
-        id="application"
-        class="container container-additional application"
-      >
+      <section id="application" class="container application">
         <h2 class="title"
           >Leave an <span class="title-underline">application</span></h2
         >
@@ -351,15 +366,25 @@
                 ></textarea>
               </div>
               <p class="application__radio-subtitle">Choose a teacher</p>
-              <input type="radio" id="Maria" name="radio-group" />
-              <label for="Maria">Maria</label>
-              <input type="radio" id="Artem" name="radio-group" />
-              <label for="Artem"> Artem</label>
-              <input type="radio" id="Ilona" name="radio-group" />
-              <label for="Ilona">Ilona</label>
-              <input type="radio" id="Volodymyr" name="radio-group" />
-              <label for="Volodymyr">Volodymyr</label>
-              <button class="button application__button" type="submit"
+              <div class="application__radio-wrapper">
+                <div class="application__radio-group">
+                  <input type="radio" id="Maria" name="radio-group" />
+                  <label for="Maria">Maria</label>
+                </div>
+                <div class="application__radio-group">
+                  <input type="radio" id="Artem" name="radio-group" />
+                  <label for="Artem"> Artem</label>
+                </div>
+                <div class="application__radio-group">
+                  <input type="radio" id="Ilona" name="radio-group" />
+                  <label for="Ilona">Ilona</label>
+                </div>
+                <div class="application__radio-group">
+                  <input type="radio" id="Volodymyr" name="radio-group" />
+                  <label for="Volodymyr">Volodymyr</label>
+                </div>
+              </div>
+              <button class="application__button button" type="submit"
                 >Send</button
               >
             </form>
@@ -367,16 +392,14 @@
               >By clicking on "Send" button, you agree to our
               <button data-modal-open class="application__policy-link"
                 >Privacy Policy</button
-              >
-              , <br />
-              and allow Promodo to use this information for marketing
+              >, and allow Promodo to use this information for marketing
               purposes.</p
             >
           </div>
         </div>
       </section>
 
-      <section id="reviews" class="container container-additional reviews">
+      <section id="reviews" class="container reviews">
         <h2 class="title"
           >What our <span class="title-underline">students</span> say</h2
         >
@@ -384,70 +407,132 @@
           >Hear from our students about their learning journey with us, as they
           share their experiences, progress, and the transformative impact
         </p>
-        <ul class="reviews__list">
-          <li class="reviews__list-item">
-            <div class="reviews__wrapper">
-              <img
-                src="./images/students/img 5.png"
-                alt="students Anna"
-                width="50"
-                height="50"
-              />
-              <div class="reviews__wrapper-text">
-                <h3 class="reviews__subtitle">Anna</h3>
-                <h4 class="reviews__subtitle-position">Student</h4>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="reviews__list-item swiper-slide">
+              <div class="reviews__wrapper">
+                <img
+                  src="./images/students/img 5.png"
+                  alt="students Anna"
+                  width="50"
+                  height="50"
+                />
+                <div class="reviews__wrapper-text">
+                  <h3 class="reviews__subtitle">Anna</h3>
+                  <h4 class="reviews__subtitle-position">Student</h4>
+                </div>
               </div>
+              <p class="reviews__text"
+                >My experience at the language school has been nothing short of
+                amazing. The teachers are dedicated and the learning environment
+                is stimulating. I feel more confident in my English skills.</p
+              >
             </div>
-            <p class="reviews__text"
-              >My experience at the language school has been nothing short of
-              amazing. The teachers are dedicated and the learning environment
-              is stimulating. I feel more confident in my English skills.</p
-            >
-          </li>
-          <li class="reviews__list-item">
-            <div class="reviews__wrapper">
-              <img
-                src="./images/students/img 6.png"
-                alt="students Mykhailo"
-                width="50"
-                height="50"
-              />
-              <div class="reviews__wrapper-text">
-                <h3 class="reviews__subtitle">Mykhailo</h3>
-                <h4 class="reviews__subtitle-position">Student</h4>
+            <div class="reviews__list-item swiper-slide">
+              <div class="reviews__wrapper">
+                <img
+                  src="./images/students/img 6.png"
+                  alt="students Mykhailo"
+                  width="50"
+                  height="50"
+                />
+                <div class="reviews__wrapper-text">
+                  <h3 class="reviews__subtitle">Mykhailo</h3>
+                  <h4 class="reviews__subtitle-position">Student</h4>
+                </div>
               </div>
+              <p class="reviews__text"
+                >The school offers a great balance of language theory and
+                practical exercises. The personalized feedback from the teachers
+                has helped me improve my weak areas.</p
+              >
             </div>
-            <p class="reviews__text"
-              >The school offers a great balance of language theory and
-              practical exercises. The personalized feedback from the teachers
-              has helped me improve my weak areas.</p
-            >
-          </li>
-          <li class="reviews__list-item">
-            <div class="reviews__wrapper">
-              <img
-                src="./images/students/img 7.png"
-                alt="students Victoria"
-                width="50"
-                height="50"
-              />
-              <div class="reviews__wrapper-text">
-                <h3 class="reviews__subtitle">Victoria</h3>
-                <h4 class="reviews__subtitle-position">Student</h4>
+            <div class="reviews__list-item swiper-slide">
+              <div class="reviews__wrapper">
+                <img
+                  src="./images/students/img 7.png"
+                  alt="students Victoria"
+                  width="50"
+                  height="50"
+                />
+                <div class="reviews__wrapper-text">
+                  <h3 class="reviews__subtitle">Victoria</h3>
+                  <h4 class="reviews__subtitle-position">Student</h4>
+                </div>
               </div>
+              <p class="reviews__text"
+                >I love the dynamic and interactive teaching methods used here.
+                It's a great place to learn English in a fun and effective way.
+                I have definitely seen a big improvement in my language
+                skills.</p
+              >
             </div>
-            <p class="reviews__text"
-              >I love the dynamic and interactive teaching methods used here.
-              It's a great place to learn English in a fun and effective way. I
-              have definitely seen a big improvement in my language skills.</p
-            >
-          </li>
-        </ul>
+            <div class="reviews__list-item swiper-slide">
+              <div class="reviews__wrapper">
+                <img
+                  src="./images/students/img 7.png"
+                  alt="students Victoria"
+                  width="50"
+                  height="50"
+                />
+                <div class="reviews__wrapper-text">
+                  <h3 class="reviews__subtitle">Maksym</h3>
+                  <h4 class="reviews__subtitle-position">Student</h4>
+                </div>
+              </div>
+              <p class="reviews__text"
+                >My experience at the language school has been nothing short of
+                amazing. The teachers are dedicated and the learning environment
+                is stimdivating. I feel more confident in my English skills.
+              </p>
+            </div>
+            <div class="reviews__list-item swiper-slide">
+              <div class="reviews__wrapper">
+                <img
+                  src="./images/students/img 7.png"
+                  alt="students Victoria"
+                  width="50"
+                  height="50"
+                />
+                <div class="reviews__wrapper-text">
+                  <h3 class="reviews__subtitle">Yana</h3>
+                  <h4 class="reviews__subtitle-position">Student</h4>
+                </div>
+              </div>
+              <p class="reviews__text">
+                The school offers a great balance of language theory and
+                practical exercises. The personalized feedback from the teachers
+                has helped me improve my weak areas.
+              </p>
+            </div>
+            <div class="reviews__list-item swiper-slide">
+              <div class="reviews__wrapper">
+                <img
+                  src="./images/students/img 7.png"
+                  alt="students Victoria"
+                  width="50"
+                  height="50"
+                />
+                <div class="reviews__wrapper-text">
+                  <h3 class="reviews__subtitle">Olga</h3>
+                  <h4 class="reviews__subtitle-position">Student</h4>
+                </div>
+              </div>
+              <p class="reviews__text">
+                I love the dynamic and interactive teaching methods used here.
+                It's a great place to learn English in a fun and effective way.
+                I have definitely seen a big improvement in my language skills.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="container container-additional">
+      <div class="container">
         <div class="footer__wrapper">
           <div class="footer__contacts-wrapper">
             <a class="footer__logo" href="#">
@@ -618,6 +703,72 @@
         </ul>
       </div>
     </div>
+
+    <div class="header-mobile">
+      <div class="header-mobile__container js-container" id="mobile-menu">
+        <button class="header-mobile__button-close js-close-menu" type="button">
+          <svg class="header-mobile__button-close_icon" width="32" height="32">
+            <use href="./images/svg-sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="header-mobile__wrapper">
+          <nav class="header-mobile__nav">
+            <ul class="header-mobile__menu">
+              <li class="header-mobile__item">
+                <a class="header-mobile__link" href="">About us</a>
+              </li>
+              <li class="header-mobile__item">
+                <a class="header-mobile__link" href="">Our lessons</a>
+              </li>
+              <li class="header-mobile__item">
+                <a class="header-mobile__link" href="">Teachers</a>
+              </li>
+              <li class="header-mobile__item">
+                <a class="header-mobile__link" href="">Reviews</a>
+              </li>
+              <li class="header-mobile__item">
+                <a class="header-mobile__link" href="">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-networks">
+            <ul class="header-networks__menu">
+              <li class="header-networks__item"
+                ><a
+                  class="header-networks__link"
+                  href="https://www.facebook.com/goITclub/"
+                >
+                  <svg class="header-networks__icon" width="28" height="28">
+                    <use href="./images/svg-sprite.svg#icon-facebook"></use>
+                  </svg> </a
+              ></li>
+              <li class="header-networks__item"
+                ><a
+                  class="header-networks__link"
+                  href="https://www.instagram.com/goitclub/"
+                >
+                  <svg class="header-networks__icon" width="28" height="28">
+                    <use href="./images/svg-sprite.svg#icon-instagram"></use>
+                  </svg> </a
+              ></li>
+              <li class="header-networks__item"
+                ><a
+                  class="header-networks__link"
+                  href="https://www.youtube.com/c/GoIT"
+                >
+                  <svg class="header-networks__icon" width="28" height="28">
+                    <use href="./images/svg-sprite.svg#icon-youtube"></use>
+                  </svg> </a
+              ></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

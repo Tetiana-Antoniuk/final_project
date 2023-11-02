@@ -1,19 +1,24 @@
+/* mobile */
 .teachers {
-  padding: 150px 0;
+  margin-bottom: 80px;
 }
 
 .teachers__list {
   display: flex;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .teachers__list-item {
-  width: calc((100% - 96px) / 4);
+  width: 100%;
+  text-align: center;
 }
 
-.teachers__list-item:hover img {
-  transform: scale(1.1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.teacher__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .teachers__subtitle {
@@ -27,15 +32,48 @@
 
 .teachers__text {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.71;
   color: var(--subtitle);
 }
 
-.teacher__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
+/* tablet */
+@media screen and (min-width: 768px) {
+  .teachers {
+    margin-bottom: 100px;
+  }
+
+  .teachers__list {
+    gap: 32px;
+    padding: 0 64px;
+  }
+  .teachers__list-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .teachers__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  .teachers {
+    margin-bottom: 150px;
+  }
+
+  .teachers__list {
+    padding: 0;
+  }
+
+  .teachers__list-item {
+    width: calc((100% - 96px) / 4);
+  }
+
+  .teachers__list-item:hover img {
+    transform: scale(1.1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

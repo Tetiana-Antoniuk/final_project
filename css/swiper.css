@@ -1,0 +1,29 @@
+/* mobile */
+.swiper {
+  width: 335px;
+  height: 370px;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-wrapper {
+  height: 326px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--green);
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 100%;
+    height: 380px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1158px) {
+}
