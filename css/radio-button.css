@@ -3,7 +3,7 @@
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
-  margin: 5px 0 0 5px;
+  margin: 3px 0 0 3px;
 }
 
 [type="radio"]:checked + label,
