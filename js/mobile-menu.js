@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.js-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const navLinks = document.querySelectorAll('.header-mobile__link'); // Add this line
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -24,5 +25,10 @@
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
+  });
+
+  // Add event listener for nav links to close menu when clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', toggleMenu);
   });
 })();

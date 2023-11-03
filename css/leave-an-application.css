@@ -75,7 +75,7 @@
   font-size: 12px;
   line-height: 1.33;
   color: var(--subtitle);
-  text-align: justify;
+  width: 100%;
 }
 
 .application__policy-link {
@@ -170,5 +170,10 @@
 
   .application__form {
     width: 500px;
+  }
+
+  .application__policy {
+    text-align: justify;
+    max-width: 500px;
   }
 }
